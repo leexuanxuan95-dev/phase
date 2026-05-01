@@ -1,0 +1,235 @@
+/* Phase legal pages — matches the in-app design language. */
+
+:root {
+  --linen: #F4F1EA;
+  --slate: #22272B;
+  --rose: #B36A6A;
+  --teal: #3D6F73;
+  --amber: #C49141;
+  --stone: #E8E3D8;
+  --ink-mute: #55595D;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--linen);
+  color: var(--slate);
+  font-family: ui-serif, "New York", Charter, Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(61, 111, 115, 0.25);
+}
+a:hover { border-bottom-color: var(--teal); }
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 28px 96px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 56px;
+}
+
+header.site .moon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--linen);
+  box-shadow: inset -10px 0 0 0 var(--slate);
+  border: 1px solid rgba(34, 39, 43, 0.1);
+}
+
+header.site .brand {
+  font-family: ui-serif, "New York", Charter, Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+header.site nav {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+}
+header.site nav a {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  border: none;
+}
+header.site nav a:hover { color: var(--slate); }
+
+.kicker {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-family: ui-serif, "New York", Charter, Georgia, serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-family: ui-serif, "New York", Charter, Georgia, serif;
+  font-size: 19px;
+  color: var(--ink-mute);
+  margin: 0 0 40px;
+}
+
+h2 {
+  font-family: ui-serif, "New York", Charter, Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 44px 0 8px;
+  letter-spacing: -0.005em;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+  color: var(--slate);
+}
+
+p, ul, ol { margin: 0 0 16px; }
+ul, ol { padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+strong { font-weight: 600; color: var(--slate); }
+
+.callout {
+  background: white;
+  border: 1px solid rgba(34, 39, 43, 0.06);
+  border-radius: 16px;
+  padding: 22px 24px;
+  margin: 28px 0;
+  box-shadow: 0 1px 2px rgba(34, 39, 43, 0.03), 0 6px 18px rgba(34, 39, 43, 0.04);
+}
+
+.callout p:last-child { margin-bottom: 0; }
+.callout .label {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+.dark {
+  background: var(--slate);
+  color: var(--linen);
+  border: none;
+}
+.dark .label { color: rgba(244, 241, 234, 0.6); }
+.dark a { color: var(--linen); border-bottom-color: rgba(244, 241, 234, 0.3); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 28px;
+  font-size: 16px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(34, 39, 43, 0.08);
+}
+th {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+tbody tr:last-child td { border-bottom: none; }
+
+footer.site {
+  margin-top: 80px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(34, 39, 43, 0.1);
+  font-size: 14px;
+  color: var(--ink-mute);
+}
+footer.site .row { display: flex; flex-wrap: wrap; gap: 18px; }
+footer.site a {
+  color: var(--ink-mute);
+  border: none;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+footer.site a:hover { color: var(--slate); }
+
+.last-updated {
+  margin-top: 56px;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+}
+
+/* Landing page extras */
+.hero {
+  padding: 24px 0 8px;
+}
+.hero h1 { font-size: 48px; line-height: 1.1; }
+.hero .lede {
+  font-size: 21px;
+  color: var(--ink-mute);
+  max-width: 540px;
+  margin: 16px 0 32px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 36px;
+}
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid rgba(34, 39, 43, 0.05);
+  text-decoration: none;
+  color: var(--slate);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(34, 39, 43, 0.06);
+}
+.card h3 { margin: 0 0 6px; font-family: ui-serif, "New York", serif; font-size: 19px; }
+.card p { color: var(--ink-mute); margin: 0; font-size: 15px; }
+
+@media (max-width: 540px) {
+  .container { padding: 32px 20px 64px; }
+  h1 { font-size: 28px; }
+  .hero h1 { font-size: 36px; }
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · Phase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="site">
+      <div class="moon" aria-hidden="true"></div>
+      <div class="brand">Phase</div>
+      <nav>
+        <a href="./">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="community.html">Community</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <p class="kicker">Privacy Policy</p>
+    <h1>Your data, your device.</h1>
+    <p class="subtitle">Phase is built so we cannot see your health data, even if we wanted to. This page explains how that works in plain English.</p>
+
+    <div class="callout">
+      <p class="label">The short version</p>
+      <p><strong>Everything stays on your iPhone.</strong> Your daily check-ins, voice notes, and Room messages are stored only in the Phase app on your device. Nothing is uploaded to a server we operate. We do not sell, rent, share, or analyse your health data. We do not run trackers. We do not know who you are unless you choose to email us.</p>
+    </div>
+
+    <h2>1. What Phase stores on your device</h2>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Where it lives</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Daily check-in values (8 sliders 0–10)</td><td>App sandbox · file-protected JSON</td><td>So you can see your own history</td></tr>
+        <tr><td>Optional voice notes</td><td>App sandbox · audio files</td><td>So you can play them back later</td></tr>
+        <tr><td>The Room messages you send and receive</td><td>App sandbox · encrypted (ChaChaPoly + Keychain key)</td><td>So conversations are readable only on your device</td></tr>
+        <tr><td>Subscription status, premium flags, quota counters</td><td>iOS UserDefaults</td><td>So we know what features to unlock</td></tr>
+        <tr><td>Generated PDF exports</td><td>App caches · disposable</td><td>So you can share them with your own doctor</td></tr>
+      </tbody>
+    </table>
+
+    <h2>2. What Phase reads from Apple Health</h2>
+    <p>If you tap <em>Connect Apple Health</em> in Settings, Phase asks iOS for permission to read these data types. You choose, per type, whether to allow it. We never receive raw data: HealthKit returns it directly to the app on your device.</p>
+    <ul>
+      <li>Sleep analysis</li>
+      <li>Heart-rate variability (SDNN)</li>
+      <li>Resting heart rate</li>
+      <li>Menstrual flow</li>
+    </ul>
+    <p>Phase can write your menstrual flow to Apple Health if you ask, so your cycle stays in one place. Phase never writes anything else to Health.</p>
+
+    <h2>3. What Phase sends over the network</h2>
+    <p>The Phase app makes network requests only in these specific cases, all of which are operated by Apple, not by us:</p>
+    <ul>
+      <li><strong>Sign in with Apple</strong> — when you choose to sign in. We receive a stable, opaque user identifier provided by Apple. We do not receive your real name or email unless you grant them.</li>
+      <li><strong>StoreKit</strong> — when you view, purchase, or restore a subscription. Apple processes payment; we never see your payment information.</li>
+      <li><strong>Apple Push Notification Service</strong> — only if you enable reminders. We send no marketing pushes.</li>
+    </ul>
+    <p>Phase does not call any other server. It does not call analytics services, advertising networks, error reporters, or "AI" providers. The Pattern Report you see is computed on your device by an algorithm shipped inside the app.</p>
+
+    <h2>4. What Phase does not collect</h2>
+    <ul>
+      <li>Your name, email, phone number, or address — unless you write to us.</li>
+      <li>Your location, contacts, calendar, or photos.</li>
+      <li>Your IP address (we have no server to log it on).</li>
+      <li>Cross-app or cross-website tracking identifiers (IDFA, IDFV, fingerprinting).</li>
+      <li>Anything that identifies you to advertisers.</li>
+    </ul>
+
+    <h2>5. The Room — anonymous, encrypted, on-device</h2>
+    <p>The Room shows up to 12 anonymous moon-shaped avatars. Names, ages, and identifiers of other members are never shown. Messages are encrypted on your device using ChaChaPoly with a symmetric key stored in the iOS Keychain (kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly). No one outside your device — including us — can decrypt or read them.</p>
+
+    <h2>6. Children</h2>
+    <p>Phase is intended for adults experiencing perimenopause or menopause. It is not directed at children under 13 (or 16 in the EEA). We do not knowingly collect data from children.</p>
+
+    <h2>7. Your rights</h2>
+    <p>Because we do not hold a copy of your data, GDPR / CCPA "data portability" and "right to erasure" requests are fulfilled by you, on your device:</p>
+    <ul>
+      <li><strong>Export</strong>: Patterns → Generate PDF.</li>
+      <li><strong>Delete</strong>: Settings → Sign out &amp; reset, or delete the Phase app from your iPhone. All check-ins, voice notes, Room messages, and Keychain keys are removed.</li>
+      <li><strong>Withdraw HealthKit permission</strong>: iOS Settings → Health → Data Access &amp; Devices → Phase.</li>
+      <li><strong>Cancel subscription</strong>: iOS Settings → Apple ID → Subscriptions.</li>
+    </ul>
+    <p>For a step-by-step path, see <a href="delete-account.html">Delete your account</a>.</p>
+
+    <h2>8. Sub-processors</h2>
+    <p>Because Phase does not transmit your health data off-device, we use no health-data sub-processors. The only third parties involved at all are:</p>
+    <ul>
+      <li><strong>Apple</strong> — operates Sign in with Apple, the App Store, StoreKit, HealthKit, Keychain, and APNs. Apple's privacy policy applies to these services.</li>
+      <li><strong>GitHub</strong> — hosts this static legal site. GitHub may log your IP address when you visit this page; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</li>
+    </ul>
+
+    <h2>9. International transfers</h2>
+    <p>Your health data does not leave your iPhone, so it is not transferred internationally by us. Subscription processing happens on Apple's infrastructure in your country's App Store storefront.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If we make material changes, we will update the date at the bottom of this page and, if the change affects how data is handled, prompt you in-app on next launch.</p>
+
+    <h2>11. Contact</h2>
+    <p>Questions, concerns, or just a hello: <a href="mailto:jasperabundant@gmail.com">jasperabundant@gmail.com</a>. See <a href="support.html">Support</a> for more channels.</p>
+
+    <p class="last-updated">Last updated: 1 May 2026 · Version 1.0</p>
+
+    <footer class="site">
+      <div class="row">
+        <a href="./">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="community.html">Community</a>
+        <a href="support.html">Support</a>
+        <a href="delete-account.html">Delete account</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

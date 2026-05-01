@@ -1,0 +1,7 @@
+# This repo's only purpose is to host the public legal site
+# (https://leexuanxuan95-dev.github.io/phase/) via GitHub Pages.
+# Everything else in this working directory is local-only.
+
+/*
+!/docs/
+!/.gitignore

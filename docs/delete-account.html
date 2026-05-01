@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delete your account · Phase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="site">
+      <div class="moon" aria-hidden="true"></div>
+      <div class="brand">Phase</div>
+      <nav>
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <p class="kicker">Account deletion · Apple §5.1.1(v)</p>
+    <h1>Delete your account.</h1>
+    <p class="subtitle">Phase stores your data only on your iPhone. Deleting it is something you do — and you can always do it.</p>
+
+    <div class="callout">
+      <p class="label">In one tap, in the app</p>
+      <p>Open <strong>Phase</strong> → tap the profile icon (top-right of the Today screen) → <strong>Sign out &amp; reset</strong>. This wipes your check-ins, voice notes, Room messages, encryption key, premium flags, and onboarding state.</p>
+    </div>
+
+    <h2>What "delete" actually removes</h2>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Where it lived</th><th>Removed when…</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Daily check-ins</td><td>App sandbox · JSON</td><td>Sign out &amp; reset, or app uninstall</td></tr>
+        <tr><td>Voice notes</td><td>App sandbox · audio files</td><td>Sign out &amp; reset, or app uninstall</td></tr>
+        <tr><td>Room messages (encrypted)</td><td>App sandbox · ChaChaPoly</td><td>Sign out &amp; reset, or app uninstall</td></tr>
+        <tr><td>Room encryption key</td><td>iOS Keychain</td><td>App uninstall (Keychain entries are scoped to the bundle)</td></tr>
+        <tr><td>Generated PDF exports</td><td>App caches</td><td>Sign out &amp; reset, or app uninstall, or iOS purges Caches automatically</td></tr>
+        <tr><td>Subscription status &amp; quota counters</td><td>UserDefaults</td><td>Sign out &amp; reset, or app uninstall</td></tr>
+        <tr><td>Sign in with Apple identifier</td><td>Apple's servers (not ours)</td><td>iOS Settings → Apple ID → Sign in with Apple → Phase → Stop using</td></tr>
+        <tr><td>Apple Health data shared with Phase</td><td>Apple Health on your device</td><td>iOS Settings → Health → Data Access &amp; Devices → Phase → Turn off all</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Step by step</h2>
+    <ol>
+      <li>Open Phase on your iPhone.</li>
+      <li>On the <strong>Today</strong> tab, tap the profile icon at the top-right.</li>
+      <li>Scroll to <strong>Account</strong>.</li>
+      <li>Tap <strong>Sign out &amp; reset</strong> (red, destructive).</li>
+      <li>Confirm.</li>
+    </ol>
+    <p>For a full wipe — including the Keychain key — also delete the Phase app from your home screen.</p>
+
+    <h2>If you signed in with Apple</h2>
+    <p>Sign in with Apple gives Phase a stable, opaque identifier. We do not link this to your name or email unless you granted them. To sever the connection at Apple's level:</p>
+    <ol>
+      <li>iOS Settings → tap your name → <strong>Sign-In &amp; Security</strong> → <strong>Sign in with Apple</strong>.</li>
+      <li>Find Phase in the list.</li>
+      <li>Tap <strong>Stop using Apple ID</strong>.</li>
+    </ol>
+
+    <h2>If you have an active subscription</h2>
+    <p>Deleting the app does <em>not</em> cancel an active App Store subscription. Cancel separately in iOS Settings → Apple ID → Subscriptions → Phase Premium → Cancel.</p>
+
+    <h2>I can't access the app — please delete my data for me.</h2>
+    <p>Email <a href="mailto:jasperabundant@gmail.com">jasperabundant@gmail.com</a> from the email associated with your Apple ID. Note: because we do not store a copy of your data, the only thing we can verify on our side is whether you have an active subscription. The data itself is on your device, and only you can access or remove it.</p>
+
+    <p class="last-updated">Last updated: 1 May 2026 · Version 1.0</p>
+
+    <footer class="site">
+      <div class="row">
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="community.html">Community</a>
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
